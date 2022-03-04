@@ -11,7 +11,8 @@
 body
 {
   background-color: var(--gb-color);
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   font-family: 'Lato', sans-serif;
 }
 
@@ -63,17 +64,35 @@ body
 
 .link:hover
 {
-  color: var(--hover-accent-color)
+  color: var(--hover-accent-color);
 }
 
 .content
 {
   clear: both;
-  padding: 0 0.8rem;
+  margin-left:1.5rem;
+  margin-right:1.5rem;
 }
 
-.home>h2
+.home h2
 {
-  font-size: 1.4rem;
   font-family: 'Ubuntu', sans-serif;
+}
+
+.blog_preview
+{
+  padding: 0.6rem;
+}
+
+.blog_preview:hover
+{
+  -webkit-box-shadow: 12px 22px 42px -32px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 12px 22px 42px -32px rgba(0, 0, 0, 1);
+  box-shadow: 12px 22px 42px -32px rgba(0, 0, 0, 1);
+  border-radius: 0 0 1.4rem 1.4rem;
+}
+
+.blog_preview h2
+{
+  color: var(--accent-color);
 }
